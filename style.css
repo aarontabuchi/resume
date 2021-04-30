@@ -1,11 +1,12 @@
 :root {
   --font-color: #131275;
-  --h3--color: #1889F5;
-  --h4--color: #1E1BB5;
+  --h3--color: #1889f5;
+  --h4--color: #1e1bb5;
   --anchor-color: #0300c4;
-  --orange: #F5B03D;
+  --orange: #f5b03d;
   --name: #131275;
-  --headshot: #E1F518;
+  --headshot: #e1f518;
+  --footer-text: #f7f7f7;
 }
 /* Split complementary and shades https://color.adobe.com/create/color-wheel main color #2825F5 */
 
@@ -57,7 +58,7 @@ h4 {
 
 h2 {
   font-size: 1.7rem;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
 h2::after {
@@ -71,7 +72,8 @@ h2::after {
 
 h3 {
   font-size: 1.15rem;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.6rem;
   color: var(--h3--color);
 }
 
@@ -80,16 +82,13 @@ h4 {
   color: var(--h4--color);
 }
 
-li:last-child {
-  margin-bottom: .3rem;
-}
-
-p, li {
-  font-size: .9rem;
+p,
+li {
+  font-size: 0.9rem;
 }
 
 li.liAnchor {
-  line-height: .7rem;
+  line-height: 0.7rem;
   margin: 4px 0;
 }
 
@@ -105,7 +104,7 @@ a::after {
   top: 4px;
 }
 
-p a::after {
+a.smallA::after {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%230300c4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" /><line x1="10" y1="14" x2="20" y2="4" /><polyline points="15 4 20 4 20 9" /></svg>');
   position: relative;
   top: 1px;
@@ -144,7 +143,10 @@ ul {
 }
 
 .glass {
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.4));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4)
+  );
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.315);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
@@ -209,13 +211,10 @@ section.glass {
   color: var(--h3--color);
 }
 
-.skills {
+ul.skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-ul.skills {
   margin: 0;
 }
 
@@ -231,4 +230,17 @@ ul.skills {
 
 footer {
   font-size: 0.9rem;
+  text-align: center;
+  color: var(--footer-text);
+  margin-top: 4px;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer a::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23f7f7f7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" /><line x1="10" y1="14" x2="20" y2="4" /><polyline points="15 4 20 4 20 9" /></svg>');
+  position: relative;
+  top: 2px;
 }
