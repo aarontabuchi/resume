@@ -27,6 +27,9 @@
     width: 8.5in;
     overflow: hidden;
   }
+  body {
+    overflow: hidden;
+  }
 }
 
 body {
@@ -52,13 +55,13 @@ h1 {
 h2,
 h3,
 h4 {
-  line-height: 1.1rem;
+  line-height: 1.0625rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.7rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.6875rem;
+  margin-bottom: 6px;
 }
 
 h2::after {
@@ -71,9 +74,9 @@ h2::after {
 }
 
 h3 {
-  font-size: 1.15rem;
-  margin-bottom: 0.4rem;
-  margin-top: 0.6rem;
+  font-size: 1.125rem;
+  margin-bottom: 6px;
+  margin-top: 6px;
   color: var(--h3--color);
 }
 
@@ -84,11 +87,11 @@ h4 {
 
 p,
 li {
-  font-size: 0.9rem;
+  font-size: 15px;
 }
 
 li.liAnchor {
-  line-height: 0.7rem;
+  line-height: 0.6875rem;
   margin: 4px 0;
 }
 
@@ -136,6 +139,7 @@ a:visited {
   width: 100%;
   height: 100%;
   padding: 16px 24px;
+  padding-bottom: 0;
 }
 
 ul {
@@ -151,7 +155,6 @@ ul {
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 section.glass {
@@ -225,14 +228,13 @@ ul.skills {
   border-radius: 6px;
   padding: 0 6px;
   margin: 4px 0;
-  /* flex-grow: 1; */
 }
 
 footer {
   font-size: 0.9rem;
   text-align: center;
   color: var(--footer-text);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .footer a {
