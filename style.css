@@ -30,6 +30,15 @@
   body {
     overflow: hidden;
   }
+  .glass {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.6)
+    );
+  }
+  section.glass {
+    background: rgba(255, 255, 255, 0.5);
+  }
 }
 
 body {
