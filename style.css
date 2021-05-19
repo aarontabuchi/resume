@@ -36,9 +36,9 @@
       rgba(255, 255, 255, 0.6)
     );
   }
-  section.glass {
-    background: rgba(255, 255, 255, 0.5);
-  }
+    section.glass {
+      background: rgba(255, 255, 255, 0.5);
+    }
 }
 
 body {
@@ -157,19 +157,19 @@ ul {
 
 .glass {
   background: linear-gradient(
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.4)
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
   );
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.315);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 section.glass {
   margin-bottom: 16px;
   padding: 14px 16px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .headshot {
